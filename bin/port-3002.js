@@ -10,7 +10,8 @@ const recordFileUtils = require("../src/data/react-web/index");
 // 创建Socket服务端
 const io = new Server(httpServer, {
     cors: {
-        origin: "http://43.138.104.32"
+        origin: ["http://43.138.104.32", "https://fengfengyun.cn"],
+        credentials: true
     }
 });
 
